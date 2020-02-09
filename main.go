@@ -26,7 +26,7 @@ func main() {
 
 	hog := cuda.CreateHOG()
 
-	hog.SetSVMDetector(hog.HOGDefaultPeopleDetector())
+	hog.SetSVMDetector(hog.GetDefaultPeopleDetector())
 
 	gpumat := cuda.NewGpuMat()
 	defer gpumat.Close()
